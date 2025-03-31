@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Positioning with Z-Index</title>
+    <style>
+        /* Base styling for all boxes */
+        .box {
+            width: 100px; /* Set width of each box */
+            height: 100px; /* Set height of each box */
+            position: absolute; /* Position absolute for manual placement */
+        }
+        
+        /* Styling for Box 1 */
+        .one {
+            background-color: red; /* Red background color */
+            z-index: 1; /* Lowest z-index value, will be behind others */
+        }
+        
+        /* Styling for Box 2 */
+        .two {
+            background-color: blue; /* Blue background color */
+            top: 50px; /* Moves box 50px down */
+            left: 50px; /* Moves box 50px to the right */
+            z-index: 4; /* Highest z-index value, will be on top */
+        }
+        
+        /* Styling for Box 3 */
+        .three {
+            background-color: green; /* Green background color */
+            top: 100px; /* Moves box 100px down */
+            left: 100px; /* Moves box 100px to the right */
+            z-index: 3; /* Middle z-index value, will be above Box 1 but below Box 2 */
+        }
+    </style>
+</head>
+<body>
+    <!-- Box 1: Positioned first with the lowest z-index -->
+    <div class="box one">Box 1</div>
+    
+    <!-- Box 2: Positioned overlapping Box 1, but has the highest z-index -->
+    <div class="box two">Box 2</div>
+    
+    <!-- Box 3: Positioned overlapping Box 1, but below Box 2 in stack order -->
+    <div class="box three">Box 3</div>
+</body>
+</html>

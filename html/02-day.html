@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        
+        <!-- Text input for name -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+
+        <!-- Email input for user email -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <!-- Radio buttons for gender selection -->
+        <label>Select Gender:</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Checkbox for agreement or subscription -->
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">Subscribe to newsletter</label>
+        <br><br>
+
+        <!-- Password field for user passwords -->
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+
+        <!-- File upload input -->
+        <label for="file">Upload File:</label>
+        <input type="file" name="file" id="file">
+        <br><br>
+
+        <!-- Text input with placeholder -->
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter your username">
+        <br><br>
+
+        <!-- Required text input -->
+        <label for="requiredInput">Required Input:</label>
+        <input type="text" name="requiredInput" id="requiredInput" required>
+        <br><br>
+
+        <!-- Autofocus input (auto-focuses when page loads) -->
+        <label for="autofocusInput">Autofocus Input:</label>
+        <input type="text" name="autofocusInput" id="autofocusInput" autofocus>
+        <br><br>
+
+        <!-- Number input for numeric values -->
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="1"> <!-- min use for  Minimum age is 1 -->
+        <br><br>
+
+        <!-- Dropdown selection -->
+        <label for="country">Select Country:</label>
+        <select name="country" id="country">
+            <option value="british">British</option>
+            <option value="pakistan">Pakistan</option>
+            <option value="america">America</option>
+        </select>
+        <br><br>
+
+        <!-- Textarea for multi-line input -->
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="3" cols="30" placeholder="Enter your message"></textarea>
+        <br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

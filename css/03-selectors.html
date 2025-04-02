@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        h1{
+            color: red;
+        }
+        #one{
+            color: chartreuse;
+        }
+        .two{
+            color: blue;
+        }
+        .three > h1{
+            color: green;
+        }
+        .three h2{
+            color: brown;
+        }
+        .three :first-child{
+            color: orange;
+        }
+        /* a:hover{
+            background-color: yellowgreen;
+
+        } */
+        /* a:active{
+            background-color: red;
+        } */
+        a:visited{
+            background-color: yellowgreen;
+        }
+        /* a:link{
+            background-color: red;
+        } */
+        *{
+            background-color: lightgreen;
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+
+    <h1 id="one">hello </h1>
+    <h1 class="two">hi</h1>
+    <h1>hey</h1>
+    <h1>world</h1>
+    <div class="three">
+        <p>
+            hello world
+            <h1>class <h2>hello</h2></h1>
+        </p>
+        
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem quas reprehenderit qui nostrum totam aliquam
+        fugiat aperiam aut tempore laboriosam libero inventore quam quos consequatur ab, ullam quis. Commodi, ullam?
+    </div>
+    <a href="www.youtube.com">kuch b</a>
+
+
+</body>
+
+</html>

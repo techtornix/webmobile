@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>list decoration</title>
+    <title>Document</title>
     <style>
-        nav ul li{
-            /* list-style:disc; */
+        nav ul li {
+            /* Sets the background color of each list item to aqua */
             background-color: aqua;
-            /* list-style-position: inside; */
-            /* list-style-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQasKPDCewT1v2j4mJjfCN1rqH2SczejiwkoA&s'); */
-            list-style: disc inside  ;
+
+            /* 
+            list-style is a shorthand property that sets:
+            list-style-type: none (removes default bullets)
+            list-style-position: inside (bullet or image is placed inside the content flow)
+            list-style-image: sets a custom image as the bullet
+            */
+            list-style: none inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvcjGWJ4e1djpMb9txVS_52mTZH3GsXspI9Q&s");
+
+            /*
+            You could use the following properties separately instead of the shorthand above:
+
+            list-style-type: none; 
+            // Removes default bullet points
+
+            list-style-position: inside; 
+            // Aligns the bullet (or image) inside the list item's padding box
+
+            list-style-image: url(...); 
+            // Replaces the bullet point with a custom image
+            */
         }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
             <li>Home</li>
-            <li>Contact</li>
             <li>About</li>
+            <li>Contact</li>
         </ul>
     </nav>
 </body>
+
 </html>

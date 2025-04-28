@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body >
+
+    <span onmouseenter="hello()">hello</span> <br>
+    <button onkeypress="hello()" onmou>click me</button>
+    <!-- some events that use for mostly in website creating 
+    onclick
+    ondblclick
+    onmouseenter
+    onmouseleave
+    onmouseout
+    onscroll  -- use in body 
+    onkeypress -- use in body Note keyboard events use in body tag   -->
+
+    <p></p>
+
     <script>
-let num = prompt("Enter a number:");
-num = parseInt(num);
-
-let fact = 1;
-
-for (let i = 1; i <= num; i++) {
-  fact = fact * i;
-}
-
-alert("Factorial of " + num + " is: " + fact);
+        function hello() {
+            alert("hello how are you");
+        }
     </script>
 </body>
 </html>

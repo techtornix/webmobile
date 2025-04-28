@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajex</title>
+</head>
+
+<body>
+
+    <p id="para">Hello this is the ajex lecture</p>
+    <button onclick="load_data()">click me</button>
+
+    <script>
+        function load_data() {
+            
+            let xhmpp = new XMLHttpRequest();
+            // for getting data from server
+            xhmpp.onreadystatechange = function () {
+
+                // check if resopnse get or not 
+                if (this.readyState == 4 && this.status == 200) {
+                    // if response is ok then we can get the data from server
+                    document.getElementById('para').innerHTML = this.responseText;
+
+                }
+                // if response is not ok then we can get the data from server
+                else if (this.readyState == 4 && this.status != 200) {
+                    document.getElementById('para').innerHTML = "file not found ";
+
+
+
+
+                }
+            }
+            xhmpp.open('GET', './readme.txt', true);
+            xhmpp.send();
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        // call backfunction 
+
+        // function sum(a, b, callback) {
+        //     console.log("Sum function called!", a + b);
+        //     callback();
+
+        // }
+
+        
+
+        // sum(2, 3,function(){
+        //     console.log("Callback function called!");
+        // });
+
+
+
+        // console.log("a");
+        // console.log("b");
+        // setTimeout(function () {
+        //     console.log("c");
+        // }, 2000);
+        // console.log("d");
+
+
+
+
+
+        //  Function that returns a Promise
+
+
+        // promises
+
+        // let promise = new Promise(function (resolve, reject) {
+        //     let success = false;
+        //     if (success) {
+        //       resolve("Task completed successfully!");
+        //     } else {
+        //         reject("Error aa gayi!");
+        //     }
+        // });
+
+        // promise.then(function (result) {
+        //     console.log(result);
+        // }).catch(function (error) {
+        //     console.log(error);
+        // });
+
+
+        // async and await
+        function wait(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+
+
+        async function doWork() {
+            console.log("Kaam shuru...");
+            await wait(2000);
+            console.log("2 second baad kaam khatam!");
+        }
+
+        doWork();
+
+
+
+    </script>
+</body>
+
+</html>

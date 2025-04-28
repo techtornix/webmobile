@@ -216,7 +216,7 @@
 
 
 
-const now = new Date();
+// const now = new Date();
 
 
 // // getFullYear(): current year return karta hai (4-digit)

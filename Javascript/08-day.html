@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval</title>
+    <style>
+        .div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div"></div>
+
+    <script>
+
+        // setTimeout(()=>{
+        // let a = document.querySelector('.div');
+        // a.style.backgroundColor = 'blue';
+        // a.style.width = '400px';
+        // a.style.height = '400px';
+        // a.style.transition = 'all 2s ease-in-out';
+        // a.style.transform = 'translate(100px, 100px)';
+        // a.style.borderRadius = '50%'; // Fixed typo here
+        // },4000)
+
+        let a = 0; // Initial margin value
+
+        setInterval(() => {
+            
+            a = a+60;
+            // Increase margin each second
+            let b = document.querySelector('.div');
+            b.style.marginLeft = a + 'px'; // Apply margin to the div
+        }, 1000);
+        
+    </script>
+</body>
+
+</html>

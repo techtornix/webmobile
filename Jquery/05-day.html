@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+
+<body>
+
+
+
+    <h1>Ajax</h1>
+   
+    <button class="btn">clock me</button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+// ajax 
+
+
+
+// --------------------------------->syntax 
+
+// $.ajax({
+//     url: "API ya server ka URL",
+//     type: "GET" ya "POST",
+//     data: { key1: "value1", key2: "value2" }, // agar POST karna ho to yeh bhejna hota hai
+//     success: function(response) {
+//         console.log("Data mil gaya:", response);
+//     },
+//     error: function(error) {
+//         console.log("Kuch ghalat ho gaya:", error);
+//     }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+            // $(document).ready(function () {
+            //     $(".btn").click(function () {
+            //         $.ajax({
+            //             url: "https://api.github.com/users",
+            //             type: "GET",
+            //             success: function (data) {
+            //                 console.log(data);
+            //             },
+            //             error: function (error) {
+            //                 console.log(error);
+            //             }
+            //         });
+            //     });
+            // });
+
+
+            $(document).ready(function(){
+                $('.btn').click(function(){
+                    $.ajax({
+                        url:'https://reqres.in/api/users',
+                        type:'post',
+                        data:{
+                            userId:1,
+                            id:1,
+                            title:'delectus aut autem',
+                            completed:false
+                        },
+                        success:function(data){
+                            console.log(data)
+                        },
+                        
+                        error: function(error){
+                            console.log(error);
+                        }
+                    })
+                })
+            })
+
+
+
+        </script>
+</body>
+
+</html>

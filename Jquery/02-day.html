@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add or remove class and togle</title>
+    <style>
+        .heading1{
+            background-color: aqua;
+        }
+        .heading2{
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="heading1">hello how are you </h1>
+    <button class="btn">click me</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+        <script>
+           // add class
+            // $(document).ready(function(){
+            //     $('.btn').click(function(){
+            //         $('.heading1').addClass('heading2');
+            //     });
+            // });
+
+
+            // remove class
+            // $(document).ready(function(){
+            //     $('.btn').dblclick(function(){
+            //         $('.heading1').removeClass('heading2');
+            //     });
+            // });
+
+            // toggle class
+            $(document).ready(function(){
+                $('.btn').click(function(){
+                    $('.heading1').toggleClass('heading2');
+                });
+            });
+        </script>
+</body>
+
+</html>

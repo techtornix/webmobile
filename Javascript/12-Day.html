@@ -10,16 +10,17 @@
 <body>
 
 
-
-
     <script>
-        fetch('./readme.txt').then((response) => {
-            return response.text();
-        }).then((data) => {
-            document.writeln(data);
-        }).catch((error) => {
-            document.writeln('Error: ' + error);
-        });
+
+
+
+        // fetch('./readme.txt').then((response) => {
+        //     return response.text();
+        // }).then((data) => {
+        //     document.writeln(data);
+        // }).catch((error) => {
+        //     document.writeln('Error: ' + error);
+        // });
 
 
         // we can make it shorter 
@@ -27,9 +28,9 @@
         .then(response => response.json())
         .then(data =>{
             // console.log(data);
-            for (const x in data) {
+             for (const x in data) {
                 console.log(data);
-                document.writeln(data[x].name + '<br>');
+                document.writeln(data[x].id + '<br>');
             }
         })
         .catch(error => document.writeln('Error: ' + error));

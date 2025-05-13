@@ -7,6 +7,11 @@ import Controledcomponent from './Controledcomponent'
 import Useeffect from './Useeffect'
 import Uncontroledcomponents from './Uncontroledcomponents'
 import Lifting from './Lifting'
+import { Link, NavLink, Route, Routes } from 'react-router'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+
 
 
 
@@ -46,7 +51,44 @@ function App() {
 
     {/* <Useeffect/> */}
     {/* <Uncontroledcomponents/> */}
-    <Lifting prop = {hello}/>
+    {/* <Lifting prop = {hello}/>
+    <MyContext.provider value = "How are youe">
+
+    </MyContext.provider> */}
+
+    {/* <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+    <Link to="/contact">contact</Link> */}
+
+
+      {/* <Routes>
+      <Route path='/' element = {<Home/>}/>
+      <Route path='/About' element = {<About/>}/>
+      <Route path='/Contact' element = {<Contact/>}/>
+      </Routes> */}
+
+<Link to='/'>Home</Link>
+<Link to='/about'>About</Link>
+<Link to='/contact'>Contact</Link>
+
+<Routes>
+  <Route path='/' element = {<Home/>}/>
+  <Route path='/About' element = {<About/>}/>
+  <Route path='/Contact' element = {<Contact/>}/>
+</Routes>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </>
   )

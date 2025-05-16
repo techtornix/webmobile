@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { PureComponent, useState } from 'react'
 import './App.css'
 import Object from './Object'
 import Loops from './Loops'
@@ -11,6 +11,11 @@ import { Link, NavLink, Route, Routes } from 'react-router'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Pagenotfound from './Pages/Pagenotfound'
+import Component from './Component'
+import { UserData } from './Crtcontext'
+import Purecomponent from './Purecomponent'
+import Test from './Test'
 
 
 
@@ -18,45 +23,45 @@ import Contact from './Pages/Contact'
 function App() {
   const [count, setCount] = useState(0)
 
-  let arr = ["Apple","Watremelon","Orange"]
-  
-  let obj  = {
-    Name : "Ali",
-    age : 20 ,
+  let arr = ["Apple", "Watremelon", "Orange"]
+
+  let obj = {
+    Name: "Ali",
+    age: 20,
     class: "BSSE"
   }
 
-  const hello = () =>{
+  const hello = () => {
     console.log("this is lifting");
-    
+
   }
 
 
   return (
     <>
-    {/* <Navbar/> */}
+      {/* <Navbar/> */}
       {/* <h1>Hello world</h1> */}
       {/* <Function/> */}
-    {/* <Prop name = 'Ali' age =' 20' email = 'muhammadbahawalofficial@gmail.com' image='\src\assets\pic.jpg'  /> */}
-    {/* <State/> */}
-    {/* <Hideshow/> */}
+      {/* <Prop name = 'Ali' age =' 20' email = 'muhammadbahawalofficial@gmail.com' image='\src\assets\pic.jpg'  /> */}
+      {/* <State/> */}
+      {/* <Hideshow/> */}
 
-    {/* <Array arr = {arr}/> */}
+      {/* <Array arr = {arr}/> */}
 
 
-    {/* <Object obj = {obj}/> */}
-    {/* <Loops/> */}
-    {/* <Conditionalrendring/> */}
-    {/* <Controledcomponent/> */}
+      {/* <Object obj = {obj}/> */}
+      {/* <Loops/> */}
+      {/* <Conditionalrendring/> */}
+      {/* <Controledcomponent/> */}
 
-    {/* <Useeffect/> */}
-    {/* <Uncontroledcomponents/> */}
-    {/* <Lifting prop = {hello}/>
+      {/* <Useeffect/> */}
+      {/* <Uncontroledcomponents/> */}
+      {/* <Lifting prop = {hello}/>
     <MyContext.provider value = "How are youe">
 
     </MyContext.provider> */}
 
-    {/* <Link to="/">Home</Link>
+      {/* <Link to="/">Home</Link>
     <Link to="/about">About</Link>
     <Link to="/contact">contact</Link> */}
 
@@ -67,21 +72,15 @@ function App() {
       <Route path='/Contact' element = {<Contact/>}/>
       </Routes> */}
 
-<Link to='/'>Home</Link>
-<Link to='/about'>About</Link>
-<Link to='/contact'>Contact</Link>
+{/* 
 
-<Routes>
-  <Route path='/' element = {<Home/>}/>
-  <Route path='/About' element = {<About/>}/>
-  <Route path='/Contact' element = {<Contact/>}/>
-</Routes>
+      <UserData.Provider value='Ahmad'>
+        <Component />
+      </UserData.Provider> */}
 
+{/* <Purecomponent/> */}
 
-
-
-
-
+<Test/>
 
 
 

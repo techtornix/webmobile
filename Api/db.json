@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "Name": "Shahwaiz",
+      "Age": 20,
+      "Class": "Webdev"
+    },
+    {
+      "id": "2",
+      "Name": "Ali",
+      "Age": 20,
+      "Class": "Webdev"
+    },
+    {
+      "id": "3",
+      "Name": "Ahmad",
+      "Age": 20,
+      "Class": "Webdev"
+    },
+    {
+      "id": "0985",
+      "name": "",
+      "email": "ali@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "37c1",
+      "name": "Ali",
+      "age": 20,
+      "email": "ali@gmail.com"
+    },
+    {
+      "id": "2fd7",
+      "name": "hamid",
+      "email": "hamid@gmail.com",
+      "password": "123343q097"
+    },
+    {
+      "id": "ada1",
+      "name": "hamid",
+      "email": "hamid@gmail.com",
+      "password": "123343q097"
+    },
+    {
+      "id": "3139",
+      "name": "hello",
+      "email": "hello@gmail.com",
+      "password": "hello"
+    }
+  ]
+}

@@ -16,25 +16,32 @@ import Component from './Component'
 import { UserData } from './Crtcontext'
 import Purecomponent from './Purecomponent'
 import Test from './Test'
+import Dashboard from './Pages/Dashboard'
+import Setting from './Pages/Setting'
+import Profile from './Pages/Profile'
+import Fetchapi from './Fetchapi'
+import Api from './Api'
+import Apiintegration from './Apiintegration'
+import Adduser from './Adduser'
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-  let arr = ["Apple", "Watremelon", "Orange"]
+  // let arr = ["Apple", "Watremelon", "Orange"]
 
-  let obj = {
-    Name: "Ali",
-    age: 20,
-    class: "BSSE"
-  }
+  // let obj = {
+  //   Name: "Ali",
+  //   age: 20,
+  //   class: "BSSE"
+  // }
 
-  const hello = () => {
-    console.log("this is lifting");
+  // const hello = () => {
+  //   console.log("this is lifting");
 
-  }
+  // }
 
 
   return (
@@ -62,28 +69,38 @@ function App() {
     </MyContext.provider> */}
 
       {/* <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-    <Link to="/contact">contact</Link> */}
+      <Link to="/about">About</Link>
+      <Link to="/contact">contact</Link>
 
 
-      {/* <Routes>
-      <Route path='/' element = {<Home/>}/>
-      <Route path='/About' element = {<About/>}/>
-      <Route path='/Contact' element = {<Contact/>}/>
-      </Routes> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/About' element={<About />} />
+        <Route path='/Contact' element={<Contact />} />
+        <Route path='/Dashboard' element={<Dashboard />}>
+          <Route path='Setting' element={<Setting />} />
+          <Route path='Profile' element={<Profile />} />
+        </Route>
+        <Route path='/*' element={<Pagenotfound />} />
+      </Routes>
+         */}
 
-{/* 
+      {/* 
 
       <UserData.Provider value='Ahmad'>
         <Component />
       </UserData.Provider> */}
 
-{/* <Purecomponent/> */}
+      {/* <Purecomponent/> */}
 
-<Test/>
+      {/* <Test/> */}
 
+{/* <Api/> */}
 
+{/* <Fetchapi/> */}
 
+{/* <Apiintegration/> */}
+<Adduser/>
 
 
 
@@ -94,4 +111,3 @@ function App() {
 }
 
 export default App
-

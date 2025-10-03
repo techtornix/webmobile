@@ -1,0 +1,48 @@
+.parent {
+    height: 80vh;
+    width: 80vw;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    /* gap: 20px; */
+    row-gap: 10px;
+    column-gap: 20px;
+    /* background-image: url("/agenticai.png"); */
+    
+}
+
+.box1 {
+    background-color: rgba(0, 0, 255, 0.333);
+    /* grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3; */
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.box2 {
+    background-color: rgb(102, 255, 0);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    /* opacity: 0.4; */
+}
+
+.box3 {
+    background-color: purple;
+}
+
+.box4 {
+    background-color: red;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.box5 {
+    background-color: yellow;
+}
+
+.box6 {
+    background-color: pink;
+}

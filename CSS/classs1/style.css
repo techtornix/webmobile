@@ -1,0 +1,47 @@
+/* h3{
+    font-size:xx-large;
+    color: rgb(255, 77, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    
+
+}
+
+p{
+    font-weight: bolder;
+    
+}
+
+.para{
+    background-color: aqua;
+}
+
+#para{
+    background-color: black;
+    color: aliceblue;
+    font-family: system-ui,'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+} */
+
+h1{
+    color: blue;
+}
+
+h2{
+    color: red;
+}
+
+.demo{
+    color: blueviolet;
+}
+
+.heading{
+color:blue !important
+}
+
+#test{
+    color:tomato
+}
+
+
+

@@ -1,0 +1,34 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    /* border-top: 5px solid red;
+    border-bottom: 5px dotted green;
+    border-left: 5px dashed blue;
+    border-right: 5px solid ; */
+    /* border: 5px solid red;
+    border-radius: 50%; */
+
+    /* margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px; */
+
+    /* margin: 50px ; */
+
+    /* padding: 40px;
+    box-sizing: border-box; */
+
+    text-align: center;
+    align-content: center;
+
+
+
+}
+
+/* .inerbox{
+height: 100px;
+width: 100px;
+background-color: blue;
+margin-top: 50px;
+} */

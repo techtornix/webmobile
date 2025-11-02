@@ -1,0 +1,48 @@
+
+
+.parent{
+    display: flex;
+}
+
+.box{
+    height: 300px;
+    width: 300px;
+    
+}
+.box1{
+    background-color: aqua;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: blueviolet;
+}
+/* 
+@media (max-width:760px) {
+    .parent{
+        flex-direction: column;
+
+    }
+    .box1{
+        background-color: cadetblue;
+    }
+} */
+/* @media (min-width: 400px) {
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: black;
+    }
+} */
+
+@media (min-width:600px) and (max-width:750px) {
+    .parent{
+        flex-direction: column;
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+    }
+}
+

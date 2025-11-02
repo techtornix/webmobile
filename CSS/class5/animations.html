@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            
+        }
+        .box:hover{
+            animation: animate 5s linear 1s infinite alternate-reverse ;
+        }
+        @keyframes animate {
+            0%{
+               
+                background-image: url("");
+
+            }
+            25%{
+                transform: translateX(300px);
+                background-image: url("me.png");
+                background-size: cover;
+            }
+
+            50%{
+                background-image: url("introclass.png");
+                background-size: cover;
+                transform: translateY(150px);
+                
+            }
+            75%{
+                transform: rotate(50deg);
+                border-radius: 50%;
+
+            }
+            100%{
+                background-color: chartreuse;
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

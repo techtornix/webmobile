@@ -1,10 +1,12 @@
 {
-  "name": "reactjs",
+  "name": "myapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
+    "faizan": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

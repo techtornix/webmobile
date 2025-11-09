@@ -1,34 +1,24 @@
-import { useEffect, useRef, useState } from 'react'
-import Navbar from './Components/Navbar'
-import Home from './Components/Home'
-import About from './Components/About'
+import { Link, Routes , Route } from 'react-router-dom'
+import './app.css'
 
+import Home from './Pages/Home'
+import About from './Pages/About'
 
 function App() {
 
-  const [count ,setCount] = useState("Ali")
-  const [count1 ,setCount1] = useState(0)
-  const inputref = useRef()
 
-
-  
-  useEffect(()=>{
-    console.log("this is our class");
-    
-  },[count])
-
-  function handelref()
-{
-  inputref.current.focus()
-}
   return (
     <>
-      {/* <Navbar/> */}
-     <Home/>
-     {/* <About name = "Ali" age = "20"  />
-     <button onClick={()=>setCount(count+"faizan")} onDoubleClick={()=>setCount1(count+1)}>click {count} {count1}</button> */}
-     <input ref={inputref} type="text" name="" placeholder='type text....' id="" /> <br /> <br />
-     <button onClick={handelref} >click me</button>
+      <nav>
+        <Link className='home' to='/'>Home</Link> 
+        <Link to='/about'>About</Link>
+        
+      </nav>
+
+      <Routes>
+        <Route path = '/' element = {<Home/>} />
+        <Route path='/about' element = {<About/>} />
+      </Routes>
 
     </>
   )

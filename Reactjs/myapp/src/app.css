@@ -1,0 +1,9 @@
+nav{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+.home{
+    font-size: 40px;
+}
+

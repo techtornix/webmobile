@@ -1,24 +1,21 @@
-import { Link, Routes , Route } from 'react-router-dom'
+import Header from "./Component/Header"
+import Navbar from "./Component/Navbar"
 import './app.css'
 
-import Home from './Pages/Home'
-import About from './Pages/About'
 
 function App() {
 
 
+  const style = {
+    backgroundColor:"red",
+    color:"blue"
+  }
+
   return (
     <>
-      <nav>
-        <Link className='home' to='/'>Home</Link> 
-        <Link to='/about'>About</Link>
-        
-      </nav>
-
-      <Routes>
-        <Route path = '/' element = {<Home/>} />
-        <Route path='/about' element = {<About/>} />
-      </Routes>
+  <h1 style={style}>Hello This is App </h1>
+  <Navbar/>
+  <Header/>
 
     </>
   )
